@@ -1,6 +1,9 @@
-# RSS Visualizer Screensaver for Windows# RSS Visualizer Screensaver v1.0.0
+# RSS Visualizer Screensaver for Windows RSS Visualizer Screensaver
+
+<img width="1637" height="853" alt="image" src="https://github.com/user-attachments/assets/6408bc26-dc35-4869-a83a-9f8641ab27f9" />
 
 
+Full disclosure, this was a vibe coding project, its not perfect, it could use some improvements but it does the job for me which was to have a screensaver on my kitchen home automation panel to avoid burnout.
 
 [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/Eric2XU/Windows_RSS_Visualizer_Screensaver/releases)A modern Windows screensaver that displays live RSS news headlines in an elegant, ambient visualization inspired by Apple's legacy RSS Visualizer.
 
@@ -319,4 +322,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Version**: 1.1.0  
 **Release Date**: November 5, 2025  
-**Copyright**: © 2025
+
