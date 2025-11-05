@@ -1,0 +1,212 @@
+========================================
+RSS VISUALIZER SCREENSAVER v1.0.0
+RELEASE NOTES
+========================================
+
+Release Date: November 5, 2025
+Package: RSS_Visualizer_v1.0.0.zip
+Size: ~70 MB
+
+WHAT'S INCLUDED
+---------------
+
+📦 Release Package Contents:
+  ✓ RssVisualizerScreensaver.exe (main executable)
+  ✓ README.md (full documentation)
+  ✓ INSTALL.txt (installation guide)
+  ✓ VERSION.txt (version information)
+  ✓ Install.bat (automated installer)
+
+INSTALLATION OPTIONS
+--------------------
+
+Option 1 - Automated (Recommended):
+1. Extract ZIP file
+2. Right-click Install.bat
+3. Select "Run as administrator"
+4. Follow on-screen instructions
+
+Option 2 - Manual:
+1. Extract ZIP file
+2. Copy RssVisualizerScreensaver.exe to C:\Windows\System32\
+3. Rename to RssVisualizerScreensaver.scr (optional)
+4. Configure via Windows screensaver settings
+
+QUICK START
+-----------
+
+1. Install using one of the methods above
+2. Right-click Desktop → Personalize → Lock screen → Screen saver
+3. Select "RssVisualizerScreensaver" from dropdown
+4. Click "Settings" to configure (optional - comes with good defaults)
+5. Click "Preview" to test
+6. Set wait time and click "OK"
+
+DEFAULT CONFIGURATION
+---------------------
+
+The screensaver is pre-configured with:
+
+📰 Feeds (6):
+   - AP News Top Stories
+   - BBC News
+   - Washington Post World
+   - NPR News
+   - ESPN Sports
+   - CBS Sports Headlines
+
+⚙️ Settings:
+   - 24 articles per feed
+   - 12 second display per article
+   - 15 minute refresh interval
+   - 48 hour article age limit
+   - 1.0x animation speed
+
+☁️ Word Cloud:
+   - 14 custom excluded words
+   - Source-balanced word selection
+   - Global frequency-based sizing
+
+FEATURES
+--------
+
+✨ Core Features:
+   ✓ Live RSS/Atom feed aggregation
+   ✓ Beautiful blue gradient design
+   ✓ Translucent glass card effects
+   ✓ Dynamic word cloud visualization
+   ✓ Scrolling background headlines
+   ✓ Random card positioning
+   ✓ Smooth animations with depth
+
+⚙️ Customization:
+   ✓ Configure unlimited RSS feeds
+   ✓ Adjust timing and refresh rates
+   ✓ Customize colors and gradients
+   ✓ Set animation speed
+   ✓ Filter word cloud content
+   ✓ Control article freshness
+
+🛡️ Quality:
+   ✓ Comprehensive error handling
+   ✓ Detailed logging for troubleshooting
+   ✓ Graceful feed failure handling
+   ✓ Memory-efficient rendering
+   ✓ DTD parsing support for legacy feeds
+
+SYSTEM REQUIREMENTS
+-------------------
+
+Minimum:
+- Windows 10 (64-bit)
+- 4GB RAM
+- 50MB free disk space
+- Internet connection
+- WebView2 Runtime (usually pre-installed)
+
+Recommended:
+- Windows 11 (64-bit)
+- 8GB+ RAM
+- SSD storage
+- High-speed internet
+- 1920x1080 or higher resolution
+
+KNOWN LIMITATIONS
+-----------------
+
+⚠️ Feed Compatibility:
+   - ESPN feed may fail (DateTime parsing issues)
+   - AP News feed may fail (format issues)
+   - Some feeds require specific user agents
+   
+💡 Workarounds:
+   - Use Settings to remove problematic feeds
+   - 4 of 6 default feeds work reliably
+   - Add your own reliable RSS/Atom feeds
+
+TROUBLESHOOTING
+---------------
+
+If screensaver doesn't start:
+→ Check file extension is .scr
+→ View C:\Windows\Temp\rss_viz.log
+→ Check Windows Event Viewer
+
+If feeds don't load:
+→ Verify internet connection
+→ Check feed URLs in browser
+→ Review log file for specific errors
+→ Try default feeds via "Restore Defaults"
+
+If word cloud shows unwanted terms:
+→ Settings → Word Cloud
+→ Add terms to exclude (comma-separated)
+→ Save and restart screensaver
+
+UPGRADING
+---------
+
+From Beta/Preview:
+1. Close screensaver if running
+2. Delete old config: %APPDATA%\RssVisualizerScreensaver\
+3. Install v1.0.0 using instructions above
+4. Reconfigure settings in Settings dialog
+
+FILE LOCATIONS
+--------------
+
+Executable:
+  C:\Windows\System32\RssVisualizerScreensaver.scr
+  (or your chosen location)
+
+Configuration:
+  %APPDATA%\RssVisualizerScreensaver\config.json
+
+Logs:
+  C:\Windows\Temp\rss_viz.log
+
+SUPPORT
+-------
+
+Documentation: README.md
+Installation Help: INSTALL.txt
+Version Info: VERSION.txt
+
+For issues:
+1. Check log file (C:\Windows\Temp\rss_viz.log)
+2. Review README.md troubleshooting section
+3. Try "Restore Defaults" in Settings
+4. Check feed URLs are accessible
+
+TECHNICAL DETAILS
+-----------------
+
+Built with:
+- .NET 8.0 (bundled, self-contained)
+- WebView2 for rendering
+- WPF for Windows UI
+- System.ServiceModel.Syndication for RSS parsing
+
+Deployment:
+- Single-file executable
+- Self-contained (no .NET runtime required)
+- ReadyToRun compilation for faster startup
+- Native libraries embedded
+
+Architecture:
+- C# backend for feed management
+- HTML/CSS/JavaScript for visualization
+- Token-based templating for dynamic content
+- In-memory caching with refresh timers
+
+CREDITS
+-------
+
+Design inspired by Apple's legacy RSS Visualizer screensaver.
+Built as a faithful recreation for Windows with modern enhancements.
+
+Copyright © 2025
+
+========================================
+Thank you for using RSS Visualizer!
+========================================

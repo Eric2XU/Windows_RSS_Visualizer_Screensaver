@@ -1,0 +1,136 @@
+RSS VISUALIZER SCREENSAVER v1.0.0 - INSTALLATION GUIDE
+======================================================
+
+QUICK INSTALL
+-------------
+
+Option 1: System-Wide Installation (Recommended)
+1. Copy RssVisualizerScreensaver.exe to C:\Windows\System32\
+   (You'll need administrator privileges)
+2. Right-click Desktop → Personalize → Lock screen → Screen saver settings
+3. Select "RssVisualizerScreensaver" from dropdown
+4. Click "Settings" to configure your feeds
+5. Click "Apply" and "OK"
+
+Option 2: User Installation
+1. Copy RssVisualizerScreensaver.exe to any folder you prefer
+   (e.g., C:\Users\YourName\Screensavers\)
+2. Rename to RssVisualizerScreensaver.scr
+3. Right-click the .scr file and select "Install"
+4. Configure settings and click "OK"
+
+
+CONFIGURATION
+-------------
+
+To open settings:
+- From Windows screensaver settings: Click "Settings" button
+- From command line: RssVisualizerScreensaver.exe /c
+- From .scr file: Right-click → Configure
+
+Default Configuration:
+- 6 RSS feeds (news and sports mix)
+- 24 articles per feed
+- 12 second display time per article
+- 15 minute refresh interval
+- 48 hour article age limit
+- Custom word cloud exclusions
+
+
+TESTING
+-------
+
+Preview Mode:
+- Click "Preview" in Windows screensaver settings
+- Or run: RssVisualizerScreensaver.exe /s
+
+To exit preview:
+- Move mouse
+- Click anywhere
+- Press any key
+
+
+CUSTOMIZATION
+-------------
+
+Add Your Own Feeds:
+1. Open Settings
+2. In "RSS Feeds" section, add one URL per line
+3. Must be valid RSS or Atom feed URLs
+4. Click "Save"
+
+Adjust Word Cloud:
+1. Open Settings
+2. Go to "Word Cloud" section
+3. Add words to exclude (comma-separated)
+4. Example: football, sports, game, match
+5. Click "Save"
+
+Change Appearance:
+1. Open Settings
+2. Adjust font sizes, colors, gradients
+3. Speed factor: 0.5 = slower, 2.0 = faster
+4. Click "Save"
+
+
+UNINSTALL
+---------
+
+1. Open Windows screensaver settings
+2. Change to a different screensaver
+3. Delete RssVisualizerScreensaver.exe (or .scr)
+4. (Optional) Delete config: %APPDATA%\RssVisualizerScreensaver\
+
+
+TROUBLESHOOTING
+---------------
+
+Problem: Screensaver won't start
+Solution: 
+- Make sure file has .scr extension or use /s flag
+- Check Windows Event Viewer for errors
+- Check log: C:\Windows\Temp\rss_viz.log
+
+Problem: No articles showing
+Solution:
+- Check internet connection
+- Verify feed URLs are valid and accessible
+- Check log file for feed errors
+- Try restoring default feeds in Settings
+
+Problem: Word cloud shows unwanted words
+Solution:
+- Open Settings → Word Cloud
+- Add words to exclude list
+- Save and restart screensaver
+
+Problem: Performance is slow
+Solution:
+- Reduce items per feed (try 10 instead of 24)
+- Increase refresh interval to 30+ minutes
+- Lower animation speed to 0.5
+- Remove slow/unreliable feeds
+
+
+REQUIREMENTS
+------------
+
+- Windows 10 or Windows 11 (64-bit)
+- WebView2 Runtime (pre-installed on most systems)
+- Internet connection
+- Approximately 50MB disk space
+
+
+SUPPORT
+-------
+
+Log File Location: C:\Windows\Temp\rss_viz.log
+Config File Location: %APPDATA%\RssVisualizerScreensaver\config.json
+
+For issues, check the log file for detailed error messages.
+
+
+VERSION
+-------
+RSS Visualizer Screensaver v1.0.0
+Released: November 2025

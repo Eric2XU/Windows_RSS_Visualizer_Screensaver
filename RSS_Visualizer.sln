@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssVisualizerScreensaver", "RssVisualizerScreensaver.csproj", "{6C065DEC-C4F8-72EE-CD34-6B90A4D544CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C065DEC-C4F8-72EE-CD34-6B90A4D544CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C065DEC-C4F8-72EE-CD34-6B90A4D544CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C065DEC-C4F8-72EE-CD34-6B90A4D544CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C065DEC-C4F8-72EE-CD34-6B90A4D544CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEB393B1-E7D5-4487-B8C7-D044DF0B9CB8}
+	EndGlobalSection
+EndGlobal

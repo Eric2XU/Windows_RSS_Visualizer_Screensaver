@@ -1,0 +1,76 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results files
+*.pidb
+*.svclog
+*.scc
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows temp files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# WebView2 runtime folder (will be downloaded automatically)
+**/RssVisualizerScreensaver.exe.WebView2/
+**/RssVisualizerScreensaver.scr.WebView2/
+
+# Release builds (keep Release folder for distribution files)
+# But ignore the WebView2 subfolder within it
+Release/RssVisualizerScreensaver.exe.WebView2/
+
+# Keep the actual release executable and documentation
+!Release/RssVisualizerScreensaver.exe
+!Release/*.txt
+!Release/*.md
+!Release/*.bat
+!Release/*.xml

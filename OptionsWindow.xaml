@@ -1,0 +1,175 @@
+<Window x:Class="RssVisualizerScreensaver.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RSS Visualizer Screensaver - Settings" Height="580" Width="720" 
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="GroupBox">
+            <Setter Property="Margin" Value="0,0,0,12"/>
+            <Setter Property="Padding" Value="8"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,4,0,2"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="4"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="16,6"/>
+            <Setter Property="MinWidth" Value="90"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,12">
+            <TextBlock Text="RSS Visualizer Screensaver Settings" 
+                       FontSize="18" FontWeight="SemiBold" Margin="0,0,0,4"/>
+            <TextBlock Text="Configure feeds, timing, and appearance for your screensaver" 
+                       FontSize="11" Foreground="#666" Margin="0"/>
+        </StackPanel>
+
+        <!-- Settings -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- RSS Feeds -->
+                <GroupBox Header="RSS Feeds">
+                    <StackPanel>
+                        <TextBlock Text="Enter RSS feed URLs (one per line):" FontWeight="SemiBold"/>
+                        <TextBox x:Name="FeedsBox" Height="110" AcceptsReturn="True" 
+                                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                                 FontFamily="Consolas"/>
+                        <TextBlock Text="Example: https://feeds.bbci.co.uk/news/rss.xml" 
+                                   FontSize="10" Foreground="#666" FontStyle="Italic" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Timing Settings -->
+                <GroupBox Header="Timing">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <TextBlock Text="Article display time (seconds):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="ArticleDisplayTimeBox" Text="12"/>
+                                <TextBlock Text="How long each article stays on screen" 
+                                           FontSize="10" Foreground="#666" FontStyle="Italic"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                                <TextBlock Text="Feed refresh interval (minutes):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="RefreshMinutesBox"/>
+                                <TextBlock Text="How often to check for new articles" 
+                                           FontSize="10" Foreground="#666" FontStyle="Italic"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <StackPanel Margin="0,12,0,0">
+                            <TextBlock Text="Maximum article age (hours):" FontWeight="SemiBold"/>
+                            <TextBox x:Name="MaxArticleAgeBox"/>
+                            <TextBlock Text="Only show articles published within this many hours (e.g., 48 for last 2 days)" 
+                                       FontSize="10" Foreground="#666" FontStyle="Italic"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Content Settings -->
+                <GroupBox Header="Content">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                            <TextBlock Text="Items per feed:" FontWeight="SemiBold"/>
+                            <TextBox x:Name="ItemsPerFeedBox"/>
+                            <TextBlock Text="Number of articles to fetch from each feed" 
+                                       FontSize="10" Foreground="#666" FontStyle="Italic"/>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                            <TextBlock Text="Animation speed:" FontWeight="SemiBold"/>
+                            <TextBox x:Name="SpeedFactorBox"/>
+                            <TextBlock Text="0.5 = half speed, 2.0 = double speed" 
+                                       FontSize="10" Foreground="#666" FontStyle="Italic"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+
+                <!-- Word Cloud Settings -->
+                <GroupBox Header="Word Cloud">
+                    <StackPanel>
+                        <TextBlock Text="Custom excluded words (comma-separated):" FontWeight="SemiBold"/>
+                        <TextBox x:Name="CustomStopWordsBox" Height="60" AcceptsReturn="True" 
+                                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                                 FontFamily="Consolas"/>
+                        <TextBlock Text="Words to exclude from the word cloud in addition to common words (the, and, etc.)" 
+                                   FontSize="10" Foreground="#666" FontStyle="Italic" Margin="0,4,0,0"/>
+                        <TextBlock Text="Example: football, college, best, state, rankings, predictions" 
+                                   FontSize="10" Foreground="#666" FontStyle="Italic" Margin="0,2,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Appearance Settings -->
+                <GroupBox Header="Appearance">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <TextBlock Text="Focus article font size (px):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="FgFontSizeBox"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                                <TextBlock Text="Background font size (px):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="BgFontSizeBox"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <TextBlock Text="Background gradient (CSS):" FontWeight="SemiBold" Margin="0,8,0,2"/>
+                        <TextBox x:Name="BgGradientBox" FontFamily="Consolas" FontSize="11"/>
+                        
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <TextBlock Text="Focus text color (CSS):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="FgColorBox" FontFamily="Consolas" FontSize="11"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                                <TextBlock Text="Background text color (CSS):" FontWeight="SemiBold"/>
+                                <TextBox x:Name="BgColumnColorBox" FontFamily="Consolas" FontSize="11"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Restore Defaults" Click="RestoreDefaults_Click" Margin="0,0,12,0"/>
+            <Button Content="Save" Click="Save_Click" IsDefault="True" Margin="0,0,8,0"/>
+            <Button Content="Cancel" Click="Cancel_Click" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
