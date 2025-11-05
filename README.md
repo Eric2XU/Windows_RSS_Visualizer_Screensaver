@@ -1,4 +1,4 @@
-# RSS Visualizer Screensaver for Windows# RSS Visualizer Screensaver v1.0.0
+# RSS Visualizer Screensaver for Windows# RSS Visualizer Screensaver
 
 
 
@@ -319,4 +319,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Version**: 1.1.0  
 **Release Date**: November 5, 2025  
-**Copyright**: © 2025
+
