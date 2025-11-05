@@ -1,4 +1,4 @@
-RSS VISUALIZER SCREENSAVER v1.0.0 - INSTALLATION GUIDE
+RSS VISUALIZER SCREENSAVER v1.1.1 - INSTALLATION GUIDE
 ======================================================
 
 QUICK INSTALL
@@ -85,6 +85,13 @@ UNINSTALL
 TROUBLESHOOTING
 ---------------
 
+Problem: "Could not resolve CoreCLR path" error
+Solution:
+- This means .NET runtime is missing or not embedded
+- Use the self-contained version (90-120MB file size)
+- Or install .NET 8.0 Desktop Runtime from Microsoft
+- See DEPLOYMENT_GUIDE.md for detailed solutions
+
 Problem: Screensaver won't start
 Solution: 
 - Make sure file has .scr extension or use /s flag
@@ -118,7 +125,12 @@ REQUIREMENTS
 - Windows 10 or Windows 11 (64-bit)
 - WebView2 Runtime (pre-installed on most systems)
 - Internet connection
-- Approximately 50MB disk space
+- Approximately 100MB disk space
+
+IMPORTANT: If using the self-contained version (recommended), 
+no additional .NET installation is required. The file size 
+should be 90-120MB. Smaller files may require .NET 8.0 
+Desktop Runtime to be installed separately.
 
 
 SUPPORT
@@ -132,5 +144,6 @@ For issues, check the log file for detailed error messages.
 
 VERSION
 -------
-RSS Visualizer Screensaver v1.0.0
+RSS Visualizer Screensaver v1.1.1
 Released: November 2025
+Changes: Enhanced deployment with self-contained .NET runtime, comprehensive diagnostics, and CoreCLR error resolution

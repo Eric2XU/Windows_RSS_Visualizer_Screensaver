@@ -1,11 +1,29 @@
 ========================================
-RSS VISUALIZER SCREENSAVER v1.0.0
+RSS VISUALIZER SCREENSAVER v1.1.1
 RELEASE NOTES
 ========================================
 
 Release Date: November 5, 2025
-Package: RSS_Visualizer_v1.0.0.zip
-Size: ~70 MB
+Package: RSS_Visualizer_v1.1.1.zip
+Size: ~171 MB (includes .NET runtime)
+
+MAJOR IMPROVEMENTS IN v1.1.1
+-----------------------------
+
+✓ FIXED: CoreCLR Path Error Resolution
+  - Self-contained deployment includes .NET runtime
+  - No separate .NET installation required
+  - Resolves deployment issues on target systems
+
+✓ NEW: Comprehensive Diagnostic Tools
+  - Added Diagnose.bat for system compatibility
+  - Enhanced Install.bat with validation
+  - Complete troubleshooting documentation
+
+✓ ENHANCED: Deployment Process
+  - Automated build-release.bat script
+  - Multiple deployment options
+  - Improved error handling and feedback
 
 WHAT'S INCLUDED
 ---------------
