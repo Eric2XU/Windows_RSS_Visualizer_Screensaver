@@ -1,4 +1,7 @@
-# RSS Visualizer Screensaver for Windows# RSS Visualizer Screensaver
+# RSS Visualizer Screensaver for Windows RSS Visualizer Screensaver
+
+<img width="1637" height="853" alt="image" src="https://github.com/user-attachments/assets/6408bc26-dc35-4869-a83a-9f8641ab27f9" />
+
 
 
 
